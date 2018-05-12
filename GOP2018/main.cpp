@@ -7,9 +7,25 @@
 //
 
 #include <iostream>
+#include "CaselleGenerator.hpp"
+#include <iostream>
+#include <stdio.h>      /* printf, scanf, puts, NULL */
+#include <stdlib.h>     /* srand, rand */
+#include <time.h>       /* time */
+using namespace std;
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, Worlds!\n";
-    return 0;
+
+int main (){
+    srand (time(NULL)); // Per far funzionare seme tempo del rand
+    
+    ptr_casella head;//genero la testa del tabellone
+    head=new casella;
+    head=NULL;
+    
+    
+    generatore_tabellone(head);
+    stampa(head);
+    
+    
+    
 }

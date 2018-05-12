@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		935A84D020A61EF7004BDE49 /* GOP2018 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GOP2018; sourceTree = BUILT_PRODUCTS_DIR; };
 		935A84D320A61EF7004BDE49 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		9386B5BD20A6D5A300004412 /* CaselleGenerator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CaselleGenerator.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				935A84D320A61EF7004BDE49 /* main.cpp */,
+				9386B5BD20A6D5A300004412 /* CaselleGenerator.hpp */,
 			);
 			path = GOP2018;
 			sourceTree = "<group>";
