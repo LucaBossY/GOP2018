@@ -17,15 +17,26 @@ using namespace std;
 //TRYs
 int main (){
     srand (time(NULL)); // Per far funzionare seme tempo del rand
-    
-    ptr_casella head;//genero la testa del tabellone
+
+	// generatore_giocatori(); funzione per creare i giocatore necessari
+
+
+    //Genera il tabellone, in modo completamente casuale
+    ptr_casella head;//Genero la testa del tabellone
     head=new casella;
-    head=NULL;
+    head=NULL; 
+    generatore_tabellone(head); //Chiama la funzione per generare il tabellone
     
-    
-    generatore_tabellone(head);
-    stampa(head);
-    
-    
+	//generatore_carte();
+
+	/* while (termina quandi si arriva alla fine del tabellone) {
+		Stampa del tabellone ()
+		Stampa riassunto della partita ()
+		Lancia dado per ogni giocatore ()
+
+		}
+
+
+	*/
     
 }
