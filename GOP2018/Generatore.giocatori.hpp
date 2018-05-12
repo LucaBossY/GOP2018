@@ -14,11 +14,52 @@
 using namespace std;
 
 
-void GeneratoreGiocatori() {
+struct giocatore { //Definisco la struttura del giocatore
+	int numero;
+	int tipologia_giocatore;
 
-	int giocatori;
-	cout << "Quanti giocatori prenderanno parte alla partita?"
-	cin >> giocatori;
+	giocatore *next;
 
+};
+
+typedef giocatore* ptr_giocatore;
+
+
+void add_giocatore(ptr_giocatore &head) { //Collegamento tra giocatori, tra il primo ed l'ultimo
+	if (head == NULL) {
+		head = new giocatore;
+		head->next = NULL;
+	}
+	else {
+		ptr_giocatore p;
+		p = head;
+		while (p->next != NULL) {
+			p = p->next;
+		}
+		p->next = new giocatore;
+		p = p->next;
+		p->next = NULL;
+	}
+
+
+
+};
+
+
+
+
+
+void generatore_tabellone(ptr_giocatore &head, int ngiocatori) {
+	int numero_giocatori=ngiocatori;
+
+	
+	int i = 0;
+	for (i; numero_giocatori>i; i++) {
+
+
+		add_giocatore(head);
+		i++;
+	}
 
 }
+
