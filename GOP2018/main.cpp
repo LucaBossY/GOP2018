@@ -14,7 +14,7 @@
 #include <time.h>       /* time */
 using namespace std;
 
-
+//TRY
 int main (){
     srand (time(NULL)); // Per far funzionare seme tempo del rand
     
