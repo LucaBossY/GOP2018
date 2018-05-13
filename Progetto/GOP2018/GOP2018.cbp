@@ -32,6 +32,11 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="CaselleGenerator.cpp" />
+		<Unit filename="CaselleGenerator.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="Generatore.giocatori.cpp" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
