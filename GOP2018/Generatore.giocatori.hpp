@@ -14,52 +14,47 @@
 using namespace std;
 
 
-struct giocatore { //Definisco la struttura del giocatore
-	int numero;
-	int tipologia_giocatore;
 
-	giocatore *next;
+
+
+
+class giocatore {
+
+private:
+	int posizione, numero; //posizione del giocatore e numero crescente del giocatore
+	char nome[20];			//nome del giocatore
+
+public:
+	void set_positione(int pos) { //aggiorna la posizione del giocatore, posizione attuale + incremento di posizione.
+		posizione = posizione + pos;
+	}
+
+	void set_numero(int num) { numero = num } //il numero è inserito dal costruttore
 
 };
 
-typedef giocatore* ptr_giocatore;
 
+struct lista_giocatore { //Definisco la struttura dei giocatori
+	//????;
 
-void add_giocatore(ptr_giocatore &head) { //Collegamento tra giocatori, tra il primo ed l'ultimo
-	if (head == NULL) {
-		head = new giocatore;
-		head->next = NULL;
-	}
-	else {
-		ptr_giocatore p;
-		p = head;
-		while (p->next != NULL) {
-			p = p->next;
-		}
-		p->next = new giocatore;
-		p = p->next;
-		p->next = NULL;
-	}
-
-
+	lista_giocatore *next;
 
 };
 
 
 
 
+void generatore.giocatori(int num) {
 
-void generatore_tabellone(ptr_giocatore &head, int ngiocatori) {
-	int numero_giocatori=ngiocatori;
-
-	
-	int i = 0;
-	for (i; numero_giocatori>i; i++) {
+	for (int i=0;  i < num; i++)
+	{
+		giocatore (0, i,);
 
 
-		add_giocatore(head);
-		i++;
+
 	}
+
+
+
 
 }
-

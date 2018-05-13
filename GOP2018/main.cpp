@@ -17,7 +17,11 @@ using namespace std;
 int main (){
     srand (time(NULL)); // Per far funzionare seme tempo del rand
 
-	// generatore_giocatori(); funzione per creare i giocatore necessari
+	int n_giocatori;
+
+	cout << "Ciao, benvenuto in GOP, quanti sono i giocatori che partecipano alla partita?"
+	cin << n_giocatori;
+	generatore.giocatori(n_giocatori);
 
 
     //Genera il tabellone, in modo completamente casuale
