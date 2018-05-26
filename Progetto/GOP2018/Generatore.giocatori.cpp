@@ -40,12 +40,14 @@ public:
 typedef giocatore* ptr_giocatore;
 
 
-struct lista_giocatore { //Definisco la struttura dei giocatori
-	//????;
+struct bilista_giocatore { //Definisco la struttura dei giocatori
 
-	lista_giocatore *next;
+    giocatore player;
+    bilista_giocatore *prec;
+	bilista_giocatore *next;
 
 };
+
 
 
 
@@ -61,7 +63,6 @@ void generatoregiocatori(int num) {
 
 	}
 
-giocatore n1= giocatore(i);
 
 
 }
