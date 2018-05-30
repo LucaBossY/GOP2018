@@ -14,10 +14,6 @@
 using namespace std;
 
 
-
-
-
-
 class giocatore {
 
 private:
@@ -25,7 +21,7 @@ private:
 
 public:
 
-	void set_positione(int pos) { //aggiorna la posizione del giocatore, posizione attuale + incremento di posizione.
+	void set_positione(int pos) //aggiorna la posizione del giocatore, posizione attuale + incremento di posizione.{
 		posizione = posizione + pos;
 	}
 
@@ -40,26 +36,16 @@ public:
 typedef giocatore* ptr_giocatore;
 
 
-struct bilista_giocatore { //Definisco la struttura dei giocatori
 
-    giocatore player;
-    bilista_giocatore *prec;
-	bilista_giocatore *next;
-
-};
-
-
-
-
-
-void generatoregiocatori(int num) {
+void GeneratoreGiocatori(int num) {
+    double_llist player;
 
 	for (int i=0;  i < num; i++)
 	{
 
-		ptr_giocatore B = new giocatore(i);
+		giocatore* A = new giocatore(i);
+        player.add_after(A);
 
-		coda.push(B);
 
 	}
 
