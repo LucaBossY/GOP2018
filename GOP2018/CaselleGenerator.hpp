@@ -5,7 +5,7 @@
 //  Created by Luca Antonio Tovoli on 09/03/18.
 //  Copyright © 2018 Luca Antonio Tovoli. All rights reserved.
 //
-
+// prova 
 #include <iostream>
 #include <stdio.h>      /* printf, scanf, puts, NULL */
 #include <stdlib.h>     /* srand, rand */
@@ -17,9 +17,9 @@ using namespace std;
 struct casella { //Definisco la struttura
     int numero;
     int tipologia_casella;
-    
+
     casella *next;
-    
+
 };
 
 typedef casella* ptr_casella;
@@ -41,9 +41,9 @@ void add_casella (ptr_casella &head) { //Collegamento tra caselle, con generazio
         p->numero=rand()%10;; //Qui viene generata la tipologia di casella, una per ogni tipologia
         p->next = NULL;
     }
-    
-    
-    
+
+
+
 };
 
 void stampa (ptr_casella p){ //funzione per stampare il contenuto della lista
@@ -52,8 +52,8 @@ void stampa (ptr_casella p){ //funzione per stampare il contenuto della lista
         cout<<x->numero<<endl;
         x=x->next;
     }
-    
-    
+
+
 }
 
 
@@ -61,16 +61,15 @@ void generatore_tabellone (ptr_casella &head) {
     int numero_caselle;
     int max; //Numero massimo di caselle generate;
     int min; //Numero massimo di caselle generate;
-    
+
     min=40; max=80; //Numeri massimo e minimo di caselle
     numero_caselle=rand()%(max-min)+min; //Generazione numero casuali
     int i=0;
     for (i;numero_caselle>i;i++) {
-        
-        
+
+
         add_casella(head);
         i++;
     }
-    
-}
 
+}
